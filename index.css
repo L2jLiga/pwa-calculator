@@ -1,0 +1,127 @@
+:root {
+    font-family: system-ui, -apple-system, "Open Sans", Arial;
+}
+
+body {
+    margin: .3em;
+    padding: 0;
+    background: #777777;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3em;
+}
+
+.header__logo {
+    width: 3em;
+    height: 3em;
+}
+
+.header_title {
+    font-size: 2em;
+    line-height: 1.5;
+    margin: .1em;
+    font-weight: 600;
+}
+
+.result-field {
+    display: block;
+    height: 5em;
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: .15em 0;
+    padding: .15em;
+    background: white;
+    color: black;
+    overflow-wrap: break-word;
+}
+
+.numbers-field {
+    display: grid;
+    grid-gap: .15em;
+    grid-template-areas:
+            'seven  eight  nine     plus      clear'
+            'four   five   six      minus     none'
+            'one    two    three    multiply  none'
+            'zero   dot    nothing  divide    sum'
+}
+
+.button {
+    display: block;
+    border: none;
+    background: #fff;
+    font-size: 1em;
+    line-height: 3;
+}
+
+.button-0 {
+    grid-area: zero;
+}
+
+.button-dot {
+    grid-area: dot;
+}
+
+.button-1 {
+    grid-area: one;
+}
+
+.button-2 {
+    grid-area: two;
+}
+
+.button-3 {
+    grid-area: three;
+}
+
+.button-4 {
+    grid-area: four;
+}
+
+.button-5 {
+    grid-area: five;
+}
+
+.button-6 {
+    grid-area: six;
+}
+
+.button-7 {
+    grid-area: seven;
+}
+
+.button-8 {
+    grid-area: eight;
+}
+
+.button-9 {
+    grid-area: nine;
+}
+
+.button-x {
+    grid-area: multiply;
+}
+
+.button-d {
+    grid-area: divide;
+}
+
+.button-p {
+    grid-area: plus;
+}
+
+.button-m {
+    grid-area: minus;
+}
+
+.button-s {
+    grid-area: sum;
+}
+
+.button-c {
+    grid-area: clear;
+}
